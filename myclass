@@ -1,0 +1,28 @@
+class Employee:
+	def __init__(self, first,last):#__init__ is a method  here self is a instance(same as emp1),and first,last are arguments
+
+#now lets create variable instance in init method
+		#now lets set instance variabless
+		self.a = first#self.a is a variable instance similar as variabl 
+		self.b = last
+		self.c = first + "." + last + "@companyname"
+
+	def fullname(self): #within method of a class the first argument is a always instance
+		return "{} {}".format(self.a,self.b)
+
+
+	# we are keep this class without any attribute,metods(function,init)
+#above part is a blue print of a class,for creatin instances
+emp_1 = Employee('corey','schafer')#thease are instances of class
+emp_2 = Employee('test','user')#they are unique instance object
+
+#above are instance  of the class
+print(emp_1.c)
+print(emp_1.fullname())
+#or simmilar
+print(Employee.fullname(emp_1))
+print(emp_2.fullname())
+
+
+#now lets add some data to instances emp_1,and emp_2, to create instance varible of the class employee
+
